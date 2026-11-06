@@ -79,7 +79,7 @@ Catatan singkat, studi kasus analisis sistem, dan tips UI/UX saya kumpulkan di [
 
 ## Mari terhubung
 
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square)](mailto:EMAIL_ANDA)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square)](mailto:nailiyaeljafar@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square)](https://www.linkedin.com/in/USERNAME_LINKEDIN)
 [![Portofolio](https://img.shields.io/badge/Portofolio-13B9FD?style=flat-square)](https://TAUTAN_PORTOFOLIO_ANDA)
 
