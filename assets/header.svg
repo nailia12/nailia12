@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Analis Sistem dan Pengembang Aplikasi</title>
+  <desc id="d">Banner animasi berisi diagram sistem Vue, Laravel, Flutter, AI, dan MySQL. Sebuah titik data mengalir di antara komponen.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1128"/>
+      <stop offset="1" stop-color="#16265A"/>
+    </linearGradient>
+    <linearGradient id="rule" gradientUnits="userSpaceOnUse" x1="70" y1="0" x2="330" y2="0">
+      <stop offset="0" stop-color="#13B9FD"/>
+      <stop offset=".55" stop-color="#42B883"/>
+      <stop offset="1" stop-color="#FF6B5B"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#FFFFFF" fill-opacity=".08"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="320" rx="22"/></clipPath>
+  </defs>
+
+  <style>
+    text { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .h1 { font-size: 46px; font-weight: 800; fill: #F4F7FF; }
+    .sub { font-size: 22px; fill: #9FB3D9; }
+    .nl { font-size: 20px; font-weight: 700; fill: #EAF1FF; text-anchor: middle; }
+    .node { fill: #0E1A3E; stroke-width: 2.5; }
+    .link { stroke: #3A4C86; stroke-width: 2.5; stroke-linecap: round; fill: none; }
+
+    /* satu momen masuk saat banner dimuat */
+    .rise { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+    .d1 { animation-delay: .15s; }
+    .d2 { animation-delay: .35s; }
+    .d3 { animation-delay: .55s; }
+    .draw { stroke-dasharray: 280; animation: draw 1.2s ease-out .8s both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } }
+    @keyframes draw { from { stroke-dashoffset: 280; } }
+
+    /* gelombang pelan di dasar banner */
+    .wave { animation: drift linear infinite; }
+    .w1 { animation-duration: 22s; }
+    .w2 { animation-duration: 34s; animation-delay: -9s; }
+    .w3 { animation-duration: 48s; animation-delay: -21s; }
+    @keyframes drift { to { transform: translateX(-1200px); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rise, .draw, .wave { animation: none; }
+    }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+
+    <!-- gelombang -->
+    <g transform="translate(0 278)"><path class="wave w1" fill="#13B9FD" fill-opacity=".22" d="M0 0 Q150 -22 300 0 T600 0 T900 0 T1200 0 T1500 0 T1800 0 T2100 0 T2400 0 V90 H0 Z"/></g>
+    <g transform="translate(0 292)"><path class="wave w2" fill="#42B883" fill-opacity=".20" d="M0 0 Q150 -16 300 0 T600 0 T900 0 T1200 0 T1500 0 T1800 0 T2100 0 T2400 0 V90 H0 Z"/></g>
+    <g transform="translate(0 304)"><path class="wave w3" fill="#FF6B5B" fill-opacity=".18" d="M0 0 Q150 -12 300 0 T600 0 T900 0 T1200 0 T1500 0 T1800 0 T2100 0 T2400 0 V90 H0 Z"/></g>
+
+    <!-- teks -->
+    <text class="h1 rise d1" x="70" y="118">Analis Sistem</text>
+    <text class="h1 rise d2" x="70" y="172">&amp; Pengembang Aplikasi</text>
+    <text class="sub rise d3" x="70" y="222">UI/UX, kecerdasan buatan, web, dan mobile</text>
+    <path class="draw" d="M70 246 H330" stroke="url(#rule)" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <!-- garis penghubung diagram sistem -->
+    <path class="link" d="M825 160 H875"/>
+    <path class="link" d="M995 160 H1045"/>
+    <path class="link" d="M935 95 V135"/>
+    <path class="link" d="M935 185 V225"/>
+
+    <!-- titik data yang mengalir; digambar di bawah node agar tampak masuk ke komponen -->
+    <g>
+      <circle r="13" fill="#13B9FD" fill-opacity=".25"/>
+      <circle r="5" fill="#FFFFFF"/>
+      <animateMotion dur="10s" repeatCount="indefinite" path="M770 160 L935 160 L935 250 L935 160 L935 70 L935 160 L1100 160 L935 160 L770 160"/>
+    </g>
+
+    <!-- node -->
+    <rect class="node" x="715" y="135" width="110" height="50" rx="14" stroke="#42B883"/>
+    <text class="nl" x="770" y="160" dy=".35em">Vue</text>
+
+    <rect class="node" x="875" y="135" width="120" height="50" rx="14" stroke="#FF6B5B"/>
+    <text class="nl" x="935" y="160" dy=".35em">Laravel</text>
+
+    <rect class="node" x="1045" y="135" width="110" height="50" rx="14" stroke="#13B9FD"/>
+    <text class="nl" x="1100" y="160" dy=".35em">Flutter</text>
+
+    <rect class="node" x="880" y="45" width="110" height="50" rx="14" stroke="#F5B544"/>
+    <text class="nl" x="935" y="70" dy=".35em">AI</text>
+
+    <rect class="node" x="880" y="225" width="110" height="50" rx="14" stroke="#8B7CF6"/>
+    <text class="nl" x="935" y="250" dy=".35em">MySQL</text>
+  </g>
+</svg>

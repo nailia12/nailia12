@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" width="1200" height="140" role="img" aria-labelledby="t">
+  <title id="t">Terima kasih sudah mampir</title>
+
+  <defs>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1128"/>
+      <stop offset="1" stop-color="#16265A"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    text { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .msg { font-size: 20px; fill: #CFE0FF; text-anchor: middle; }
+    .wave { animation: drift linear infinite; }
+    .w1 { animation-duration: 28s; }
+    .w2 { animation-duration: 40s; animation-delay: -12s; }
+    .w3 { animation-duration: 34s; animation-delay: -5s; }
+    @keyframes drift { to { transform: translateX(-1200px); } }
+    @media (prefers-reduced-motion: reduce) { .wave { animation: none; } }
+  </style>
+
+  <g transform="translate(0 46)"><path class="wave w1" fill="#13B9FD" fill-opacity=".30" d="M0 0 Q150 -20 300 0 T600 0 T900 0 T1200 0 T1500 0 T1800 0 T2100 0 T2400 0 V120 H0 Z"/></g>
+  <g transform="translate(0 58)"><path class="wave w2" fill="#42B883" fill-opacity=".26" d="M0 0 Q150 -16 300 0 T600 0 T900 0 T1200 0 T1500 0 T1800 0 T2100 0 T2400 0 V120 H0 Z"/></g>
+  <g transform="translate(0 70)"><path class="wave w3" fill="url(#navy)" d="M0 0 Q150 -14 300 0 T600 0 T900 0 T1200 0 T1500 0 T1800 0 T2100 0 T2400 0 V120 H0 Z"/></g>
+
+  <text class="msg" x="600" y="112">Terima kasih sudah mampir. Mari berdiskusi dan berkolaborasi.</text>
+</svg>
